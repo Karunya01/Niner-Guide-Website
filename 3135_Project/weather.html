@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Karunya Karthikeyan">
+    <title>Niner Guides</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/weather.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="js/weather.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-adjust">
+            <img src="images/logo.png" alt="Niner Guides Logo" class="logo">
+        </div>
+        <h1>Niner Guides</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="meetguides.html">Meet Current Niner Guides</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="maps.html">Tour Maps</a></li>
+                <li><a href="weather.html" class="current">Weather Updates</a></li>
+                <li><a href="becomeaguide.html">Become a Niner Guide</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="home">
+        <h2>Type in Charlotte to get Weather Updates for today!</h2>
+        <h3>You can also get weather Updates for any other cities and towns as well.</h3>
+        <input type="text" id="cityInput" name="cityInput" placeholder="Input City">
+        <button onclick="fetchWeather()">Submit</button>
+        <h5 id="error"></h5>
+        <h3 id="city"></h3>
+        <div id="weather" class="weather-container"></div>
+        <br>
+        <br>
+        <div class="citation">
+            <p class="font-sm">*Citation:</p>  
+            <p class="font-sm">OpenWeatherMap.org. (n.d.). Weather API - OpenWeatherMap. https://openweathermap.org/api</p>  
+            <p class="font-sm">Andy’s Tech Tutorials. (2023, November 8). Weather API Project Tutorial using HTML, CSS, and JavaScript</p>
+            <p class="font-sm">| For Beginners [Video]. YouTube. 
+            https://www.youtube.com/watch?v=JubKY5p3qRc*/</p>
+        </div>    
+
+    </main>
+    <footer>
+        <p class="font-sm">&copy;2024 Niner Guides. All rights reserved.</p>    
+    </footer>
+</body>
+</html>
+
+<!--Citation:
+OpenWeatherMap.org. (n.d.). Weather API - OpenWeatherMap. https://openweathermap.org/api
+Andy’s Tech Tutorials. (2023, November 8). Weather API Project Tutorial using HTML, CSS, and JavaScript | For Beginners [Video]. YouTube. 
+https://www.youtube.com/watch?v=JubKY5p3qRc*/
+-->

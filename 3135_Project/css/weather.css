@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "neusa-next-std-condensed", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    background: whitesmoke;
+    color: black;
+    min-height: 100vh;
+}
+
+input, textarea, select, button {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ol {
+    padding-left: 1.5rem;
+}
+
+p {
+    font-size: 1.25rem;
+    margin: 0 auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/* Header Area Styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-family: "neusa-next-std-condensed", sans-serif;
+    background-color: #0c3b2e;
+    color: #fff;
+    text-align: center;
+    font-size: xx-large;
+    padding: 1rem 0;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+.logo-adjust {
+    float: left;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.logo {
+    width: 90px;
+    height: auto;
+}
+
+header nav {
+    background-color: #0c3b2e;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+header nav ul li {
+    font-size: 1rem;
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: gold;
+}
+
+header nav ul li a.current {
+    text-decoration: none;
+    border-bottom: 2px solid gold;
+}
+
+header nav ul li a:hover,
+header nav ul li a:active {
+    color: white;
+    border-bottom: 1.5px solid wheat;
+}
+
+/* Main Content Area Styles */
+main {
+    width: 100%;
+    max-width: 1300px;
+    padding: 13rem 1rem 1rem 1rem;
+    margin: 0 auto;
+    flex: 1;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+
+h2, h3, h4 {
+    color: #0C3B2E;
+    margin: 0.5rem 0;
+}
+
+.left {
+    display: block;
+    float: left;
+    margin: 0 4rem 4rem 0;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 10px 6px -6px #6d9773;
+    margin-bottom: 1rem;
+}
+
+
+
+/* Footer Area Styles */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #0C3B2E;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: auto;
+}
+
+.font-sm {
+    font-size: 0.8rem;
+}
+
+input {
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+button {
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0C3B2E;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #6d9773;
+}
+
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 60px; 
+}
+
+/*.weather_description {
+    color: black;
+    font-size: larger;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}*/
+
+.weather_description {
+    color: black;
+    font-size: larger;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 1rem;
+}
+
+.weather_description img {
+    margin-right: 1rem;
+}
+
+#error {
+    color: red;
+    font-size: 16px;
+    margin-top: 1rem;
+}
+main.home {
+    background: linear-gradient( rgba(101, 255, 206, 0.932),whitesmoke); 
+    padding: 13rem 0 1rem 1rem;
+    flex: 1; 
+    padding-bottom: 4rem; 
+}
+
+.citation {
+    bottom: 50px;
+    left: 5px; 
+    text-align: left;
+    z-index: 1;
+}
+
+/*Citation:
+OpenWeatherMap.org. (n.d.). Weather API - OpenWeatherMap. https://openweathermap.org/api
+Andy’s Tech Tutorials. (2023, November 8). Weather API Project Tutorial using HTML, CSS, and JavaScript | For Beginners [Video]. YouTube. 
+https://www.youtube.com/watch?v=JubKY5p3qRc*/

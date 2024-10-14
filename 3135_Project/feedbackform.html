@@ -1,0 +1,101 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Karunya Karthikeyan">
+        <title>Niner Guides</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo-adjust">
+                <img src="images/logo.png" alt="Niner Guides Logo" class="logo">
+            </div>
+            <h1>Niner Guides</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="meetguides.html">Meet Current Niner Guides</a></li>
+                    <li><a href="forms.html" class="current">Forms</a></li>
+                    <li><a href="blog.html"> Blog </a></li>
+                    <li><a href="maps.html"> Tour Maps </a></li>
+                    <li><a href="weather.html">Weather Updates</a></li>
+                    <li><a href="becomeaguide.html">Become a Niner Guide</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                    <li><a href="contactus.html"> Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+        <h2>Feedback Form</h2>
+        <p> Filling out this form will help us improve the program for our guides and to make the<br>
+                tour experience for guest more enjoyable based on your suggestions.
+            </p>
+            <h2>Leave your feedback here!</h2>
+            <form action="#">
+                <input type="text" id="guide-name" name="guide-name" placeholder="Guide Name" required>
+                <br>
+                <input type="number" id="tour-group-size" name="tour-group-size" min="1" max="100" placeholder= "Size of the Tour Group" required>
+                <input type="datetime-local" name="date_of_tour" id="date_of_tour">
+                <br><br>
+                <label for="time">What time was your tour today?</label>
+                    <select id="time" name="time" required>
+                        <option value=""> -- </option>
+                        <option value="1">10:00 am</option>
+                        <option value="4">9:30 am</option>
+                        <option value="5">11:30 am</option>
+                        <option value="2">12:00 pm</option>
+                        <option value="3">2:00 pm</option>
+                    </select>
+                    <br>
+                <br>
+                <label>Rate your overall tour experience today:</label>
+                    <div >
+                        <input type="radio" id="experience-1" name="experience" value="1">
+                        <label for="experience-1">1</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="experience-2" name="experience" value="2">
+                        <label for="experience-2">2</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="experience-3" name="experience" value="3">
+                        <label for="experience-3">3</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="experience-4" name="experience" value="4">
+                        <label for="experience-4">4</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="experience-5" name="experience" value="5" required>
+                        <label for="experience-5">5</label>
+                    </div>
+                    <br>
+                    <label for="organization">How organized was your tour today?</label>
+                    <select id="organization" name="organization" required>
+                        <option value="">--</option>
+                        <option value="1">Poor</option>
+                        <option value="2">Fair</option>
+                        <option value="3">Good</option>
+                        <option value="4">Very Good</option>
+                    </select>
+                    <br>
+                <br>
+                <textarea name="message" id="difficulties" placeholder="Did you face any difficulties today?" required></textarea>
+                <textarea name="message" id="suggestions" placeholder="Any suggestions for improvements?" required></textarea>\
+                <br>
+                <input type="submit" name="submit" id ="submit" value="Submit">     
+            </form>
+
+        </main>
+
+
+        <footer>
+            <p class="font-sm">&copy;2024 Niner Guides. All rights reserved.</p>    
+        </footer>
+        
+    </body>
+    </html>

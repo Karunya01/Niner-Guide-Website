@@ -1,0 +1,591 @@
+/*CSS Reset and General Styles*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+body {
+    display: flex; 
+    flex-direction: column;
+    font-family: "neusa-next-std-condensed", sans-serif;
+    font-weight:500;
+    line-height: 1.5;
+    background: whitesmoke;
+    color: black;
+    min-height: 100vh;
+    
+}
+
+input, textarea, select, button {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ol {
+    padding-left: 1.5rem; 
+}
+
+p {
+    font-size: 1.25rem;
+    margin: 0 auto;
+    padding-left: 1.5rem;   
+    padding-right: 1.5rem;   
+}
+
+/*Header Area Styles*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;  
+    font-family:"neusa-next-std-condensed", sans-serif;
+    background-color: #0c3b2e;
+    color: #fff;
+    text-align: center;
+    font-size: xx-large;
+    padding: 1rem 0; 
+    box-sizing: border-box;
+    z-index: 10;
+}
+ 
+.logo-adjust {
+    float: left;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.logo {
+    width: 90px; 
+    height: auto;
+}
+
+
+header nav {
+    background-color: #0c3b2e;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center; 
+    padding: 1rem 0;
+}
+
+header nav ul li {
+    font-size: 1rem;
+    margin: 0 1rem; 
+}
+
+header nav ul li a {
+    color: gold;
+}
+
+header nav ul li a.current {
+    text-decoration: none; 
+    border-bottom: 2px solid gold; 
+}
+
+header nav ul li a:hover,
+header nav ul li a:active {
+    color: white;
+    border-bottom: 1.5px solid wheat;
+}
+
+/*Main Content Area Styles*/
+main {
+    width:100%;
+    max-width:1500px;
+    padding: 13rem 0 1rem 1rem;
+    margin: 0 auto;
+    flex: 1; 
+    padding-bottom: 4rem; 
+    
+}
+
+
+.guide {
+    padding-left: 5rem;
+    text-align: center;
+}
+
+
+
+h2, h3, h4 {
+    color: #0C3B2E;
+    margin: 0.5rem 0;
+}
+
+.left {
+    display: block;
+    float: left; 
+    margin: 0 4rem 4rem 0; 
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 10px 6px -6px #6d9773;
+    margin-bottom: 1rem;
+}
+
+/*Footer Area Styles*/
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #0C3B2E;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: auto;
+}
+
+.font-sm {
+    font-size: 0.8rem;
+}
+
+
+/*Home Page Styles*/
+main.home {
+    background: linear-gradient( rgba(101, 255, 206, 0.557),whitesmoke); 
+    padding: 13rem 0 1rem 1rem;
+    flex: 1; 
+    padding-bottom: 4rem; 
+}
+
+main ul li {
+    list-style: none;
+    background-repeat: no-repeat;
+    background-size: 1em 1em;
+    padding-left: 1.5em;
+    background-position: 0 0.2em; 
+}
+
+.indent-right {
+    padding-left: 1em;
+}
+
+main a {
+    color: #6d9773; 
+    text-decoration: none; 
+}
+
+main a:hover,
+main a:active {
+    border-bottom: 2px solid #6d9773; 
+}
+
+/*Meet Niner Guide*/
+main.meet-guides {
+    background: linear-gradient( rgba(101, 255, 206, 0.557),whitesmoke); 
+    padding: 13rem 0 1rem 1rem;
+    flex: 1; 
+    padding-bottom: 4rem; 
+}
+
+/*Forms Page Styles*/
+main.forms {
+    background: linear-gradient( rgba(101, 255, 206, 0.557),whitesmoke); 
+    padding: 13rem 0 1rem 1rem;
+    flex: 1; 
+    padding-bottom: 4rem; 
+}
+
+
+input[type="text"],
+input[type="number"],
+input[type="datetime-local"],
+textarea {
+    border: 2px solid #0C3b2e;
+    margin-bottom: 0.5rem;
+    width: 60%;
+    padding: 0.6em;
+}
+
+textarea {
+    height: 8em;
+}
+
+input[type="submit"]{
+    background-color: #0c3b2e;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+/*Become a Nine Guide Page*/
+main.become-a-guide {
+    background: linear-gradient(  rgba(101, 255, 206, 0.557),whitesmoke ); 
+    padding: 13rem 0 1rem 1rem;
+    flex: 1; 
+    padding-bottom: 4rem; 
+}
+
+main ol li {
+    margin: 2px;
+    font-weight: bold;
+    
+}
+
+.btn {
+    background-color: #0c3b2e;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.btn:hover {
+    background-color: green;
+}
+
+.box {
+    background-color: #0c3b2e;
+    color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    max-width: 800px;
+}
+
+main.contact-us {
+    background: linear-gradient(  rgba(101, 255, 206, 0.557),whitesmoke ); 
+    padding: 13rem 0 1rem 1rem;
+    flex: 1; 
+    padding-bottom: 4rem; 
+}
+
+
+main.contact-us a {
+    font-size:24px;
+    color: #0c3b2e;
+}
+
+.posts {
+    border: 3px var(--second-bg-color) solid;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.post {
+    background-color: rgba(63, 135, 63, 0.621);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 0 rgba(17, 12, 46, 0.8);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.post p {
+    line-height: 1.25;
+}
+
+
+.blog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion {
+    width: 80%;
+    margin: 1rem auto;
+    line-height: 1.5;
+}
+
+.accordion-label {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 1rem 0.5rem;
+    text-align: left;
+    /*background-color: #665105;*/
+    background-color: rgb(182, 155, 0);
+    opacity: 0.7;
+    border: none;
+    color: white;
+    position: relative;
+    transition: opacity 0.5s ease-out;
+}
+
+.accordion-content {
+    margin-bottom: 0.5rem;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+}
+
+.accordion-content.open {
+    overflow: hidden;
+    height: var(--content-height, 0);
+}
+
+.accordion-label.open {
+    opacity: 1;
+}
+
+.accordion-label::after {
+    content: '+';
+    position: absolute;
+    right: 1rem;
+    font-size: 1.2rem;
+}
+
+.accordion-label.open::after {
+    content: '-';
+    font-size: 1.5rem;
+}
+
+
+/*.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.modal-open {
+    display: block;
+    transition: opacity 2s ease-in;
+    opacity:1;
+}
+  
+.modal-header{
+    display:flex;
+    background:#6d9773;
+    color:#fff;
+    width: 100%; 
+    height: 100%;
+    padding: 5px 15px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: background-color 2s ease;
+}
+  
+.modal-content {
+    background-color: #fefefe;
+    margin: auto; 
+    margin-top: 250px;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%; 
+}
+
+  
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+  
+.close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cancelbtn {
+    margin-top: 15px;
+    padding: 14px 20px;
+    background-color: orange;
+    color: #fff;
+}
+
+.signupbtn {
+    margin-top: 15px;
+    padding: 14px 20px;
+    background-color: #0C3b2e;
+    color:#fff;
+}
+  
+.signupbtn:hover,
+.signupbtn:focus {
+    background-color: #6d9773;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cancelbtn:hover,
+.cancelbtn:focus {
+    background-color: orangered;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+  
+.cancelbtn, .signupbtn {
+    float: left;
+    width: 50%;
+    transition: background-color 1s ease, transform 1s ease;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.modal-btn{
+    background: #0C3b2e;
+    color:#fff;
+    padding: 15px 10px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hidden{
+    transform: translate(-0.1px);
+    transition: all 3s;
+}*/
+
+.modal {
+    position: fixed;
+    /*z-index: 100;*/
+    left: 0;
+    bottom: -100%; /* Start the modal off-screen */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black overlay */
+    transition: bottom 0.5s ease-out; /* Transition for revealing from the bottom */
+}
+
+.modal-open {
+    bottom: 0; /* Move the modal into view */
+}
+
+.modal-header {
+    display: flex;
+    background: #6d9773;
+    color: #fff;
+    width: 97%;
+    height: 50px; /* Adjust height as needed */
+    padding: 5px 15px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: background-color 0.5s ease;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+    margin: auto;
+    transform: translateY(100%); /* Initially off-screen */
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Transition for sliding in */
+}
+
+.modal-open .modal-content {
+    transform: translateY(10); /* Slides the content in */
+    opacity: 1; /* Fade in the content */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cancelbtn,
+.signupbtn {
+    margin-top: 15px;
+    padding: 14px 20px;
+    width: calc(50% - 10px); /* Adjust width and margin as needed */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cancelbtn {
+    background-color: orange;
+    color: #fff;
+}
+
+.signupbtn {
+    background-color: #0c3b2e;
+    color: #fff;
+}
+
+.cancelbtn:hover,
+.cancelbtn:focus {
+    background-color: orangered;
+}
+
+.signupbtn:hover,
+.signupbtn:focus {
+    background-color: #6d9773;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.modal-btn {
+    background: #0c3b2e;
+    color: #fff;
+    padding: 15px 10px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="text"] {
+    border: 2px solid #0C3b2e;
+    margin-bottom: 0.5rem;
+    width: 60%;
+    padding: 0.6em;
+}
+
+
+/*Citation for Modals:
+GeeksforGeeks. (2023, February 20). How to create a responsive Modal Sign-Up form for a Website ? 
+GeeksforGeeks. https://www.geeksforgeeks.org/create-responsive-modal-sign-form-website/
+W3Schools.com. (n.d.). https://www.w3schools.com/howto/howto_css_modals.asp
+Modal Animations. (n.d.). CodePen. https://codepen.io/designcouch/pen/obvKxm*/
+

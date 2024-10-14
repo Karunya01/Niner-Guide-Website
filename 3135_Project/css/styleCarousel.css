@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+body {
+    display: flex; 
+    flex-direction: column;
+    font-family: "neusa-next-std-condensed", sans-serif;
+    font-weight:500;
+    line-height: 1.5;
+    background: whitesmoke;
+    color: black;
+    min-height: 100vh;
+    
+}
+
+input, textarea, select, button {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ol {
+    padding-left: 1.5rem; 
+}
+
+p {
+    font-size: 1.25rem;
+    margin: 0 auto;
+    padding-left: 1.5rem;   
+    padding-right: 1.5rem;   
+}
+
+/*Header Area Styles*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;  
+    font-family:"neusa-next-std-condensed", sans-serif;
+    background-color: #0c3b2e;
+    color: #fff;
+    text-align: center;
+    font-size: xx-large;
+    padding: 1rem 0; 
+    box-sizing: border-box;
+    z-index: 10;
+}
+ 
+.logo-adjust {
+    float: left;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.logo {
+    width: 90px; 
+    height: auto;
+}
+
+
+header nav {
+    background-color: #0c3b2e;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center; 
+    padding: 1rem 0;
+}
+
+header nav ul li {
+    font-size: 1rem;
+    margin: 0 1rem; 
+}
+
+header nav ul li a {
+    color: gold;
+}
+
+header nav ul li a.current {
+    text-decoration: none; 
+    border-bottom: 2px solid gold; 
+}
+
+header nav ul li a:hover,
+header nav ul li a:active {
+    color: white;
+    border-bottom: 1.5px solid wheat;
+}
+
+/*Main Content Area Styles*/
+main {
+    width:100%;
+    max-width:1500px;
+    padding: 13rem 0 1rem 1rem;
+    margin: 0 auto;
+    flex: 1; 
+    padding-bottom: 4rem; 
+    
+}
+
+
+.carousel-container {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel {
+    list-style-type: none;
+    width: 100%;
+    height: 550px;
+    position: relative;
+    box-shadow: 8px 6px 6px 8px rgba(0, 0, 0, 0.39);
+}
+
+.carousel-item {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: 300ms opacity ease-in-out;
+    transition-delay: 300ms;
+}
+
+.carousel-item > img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+.carousel-btn {
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #046A38;
+    position: absolute;
+    top: 50%;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.carousel-btn.left {
+    left: -2.5rem;
+}
+
+.carousel-btn.right {
+    right: -2.5rem;
+}
+
+.carousel-btn:hover {
+    cursor: pointer;
+    background-color: #046A38;
+    color: white;
+}
+
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.7rem;
+    gap: 0.5rem;
+}
+
+.nav-item {
+    height: 11px;
+    width: 11px;
+    background-color: black;
+    border-radius: 50%;
+    opacity: 0.3;
+    transition: 300ms opacity ease-in-out;
+}
+
+.carousel-item.active {
+    opacity: 1;
+    transition-delay: 0ms;
+}
+
+.nav-item.active {
+    opacity: 0.7;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #0C3B2E;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: auto;
+}
+
+.font-sm {
+    font-size: 0.8rem;
+}
+
+main.home {
+    background: linear-gradient( rgba(101, 255, 206, 0.557),whitesmoke); 
+    padding: 13rem 0 1rem 1rem;
+    flex: 1; 
+    padding-bottom: 4rem; 
+}

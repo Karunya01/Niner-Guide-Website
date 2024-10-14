@@ -1,0 +1,84 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Karunya Karthikeyan">
+        <title>Niner Guides</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo-adjust">
+                <img src="images/logo.png" alt="Niner Guides Logo" class="logo">
+            </div>
+            <h1>Niner Guides</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="meetguides.html">Meet Current Niner Guides</a></li>
+                    <li><a href="forms.html" class="current">Forms</a></li>
+                    <li><a href="blog.html"> Blog </a></li>
+                    <li><a href="maps.html"> Tour Maps </a></li>
+                    <li><a href="weather.html">Weather Updates</a></li>
+                    <li><a href="becomeaguide.html">Become a Niner Guide</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                    <li><a href="contactus.html"> Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+        <h2>Absence Form</h2>
+        <p> Filling out this form will help us keep track of the guides' absences and make sure we can <br>
+            work around shedules accordingly and provide a smooth tour experience for our guests!
+            </p>
+            <h2>Fill in the absence form below:</h2>
+            <form action="#">
+                <input type="text" id="guide-name" name="guide-name" placeholder="Guide Name" required>
+                <br>
+                <input type="datetime-local" name="Date_of_absence" id="Date_of_absence">
+                <br><br>
+                <label for="time">What time is your tour shift?</label>
+                    <select id="time" name="time" required>
+                        <option value=""> -- </option>
+                        <option value="1">10:00 am</option>
+                        <option value="4">9:30 am</option>
+                        <option value="5">11:30 am</option>
+                        <option value="2">12:00 pm</option>
+                        <option value="3">2:00 pm</option>
+                    </select>
+                    <br>
+                <br>
+                <label>Reason for absence</label>
+                    <div>
+                        <input type="radio" id="absence-1" name="absence" value="a" required>
+                        <label for="absence-1">Academic Reason (eg. Preperation for an exam, working on a project, etc. )</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="absence-2" name="absence" value="b">
+                        <label for="absence-2">Personal Reason</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="absence-3" name="absence" value="c">
+                        <label for="absence-3">Preplanned absence</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="absence-4" name="absence" value="d">
+                        <label for="absence-4">Sick leave</label>
+                    </div>
+                    <br>
+            
+                <input type="submit" name="submit" id ="submit" value="Submit">     
+            </form>
+
+        </main>
+
+
+        <footer>
+            <p class="font-sm">&copy;2024 Niner Guides. All rights reserved.</p>    
+        </footer>
+        
+    </body>
+    </html>
